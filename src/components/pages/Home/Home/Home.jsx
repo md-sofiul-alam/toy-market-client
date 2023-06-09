@@ -1,7 +1,8 @@
 
-import Title from "../../../../hooks/Title";
+import Title from "../../../../hooks/useTitle";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
+
 import Comments from "../Comments/Comments";
 import Gallery from "../Gallery/Gallery";
 import Info from "../Info/Info";

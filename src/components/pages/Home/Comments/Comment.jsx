@@ -3,8 +3,8 @@
 const Comment = ({comment}) => {
     const { name, description, imageSrc } = comment;
     return (
-        <div className="carousel-item w-full justify-center text-center">
-            <div className="bg-white rounded-lg shadow-lg p-6 ">
+        
+            <div className="bg-white w-4/5 mx-5 rounded-lg shadow-lg p-6 text-center">
                 <div className="mb-4">
                     <img className="w-36 h-36 block mx-auto rounded-full" src={imageSrc} alt={name} />
                     <div>
@@ -14,7 +14,6 @@ const Comment = ({comment}) => {
                 </div>
                 <p className="text-gray-700 w-1/2 mx-auto">{description}</p>
             </div>
-        </div>
 
     );
 };
