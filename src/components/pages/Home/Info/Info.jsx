@@ -2,12 +2,12 @@
 
 const Info = () => {
     return (
-        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 py-10">
+        <div className="bg-gradient-to-r from-green-700 to-teal-600  py-10">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center text-white">
                     <div className="w-1/2 p-6">
                         <h2 className="text-5xl font-bold mb-5">For Latest News</h2>
-                        <p className="text-2xl">Fill out the right side form. If any new toy will come we notify you via email.</p>
+                        <p className="text-2xl">Feel Free To Fill  The Form to Get The Updates</p>
                     </div>
                     <div className="w-1/2 p-6">
                         <h2 className="text-2xl font-bold text-white">Write Name & Email</h2>
@@ -32,7 +32,7 @@ const Info = () => {
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                                 />
                             </div>
-                            <button type="submit" className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600">Submit</button>
+                            <button type="submit" className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 text-lg font-medium">Submit</button>
                         </form>
                     </div>
                 </div>

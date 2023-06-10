@@ -55,7 +55,7 @@ const SignUp = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
             <div className="max-w-md w-full px-6 py-8 bg-white shadow-md rounded-md">
-                <h2 className="text-2xl font-semibold mb-6">Sign Up</h2>
+                <h2 className="md:text-4xl text-2xl text-blue-600 text-center font-semibold mb-6">Sign Up</h2>
                 <p className='error-text'>{error}</p>
                 <form onSubmit={handleSignIn}>
                     <div className="mb-4">
@@ -114,9 +114,9 @@ const SignUp = () => {
                         >
                             Sign Up
                         </button>
-                        <Link className="text-blue-500 hover:underline text-sm" to='/login'>
+                        <p>Have An Account? <Link className="text-blue-500 font-medium text-lg hover:underline" to='/login'>
                             Login
-                        </Link>
+                        </Link></p>
                     </div>
                     <div className="flex items-center justify-center mt-6">
                         <span className="text-gray-600 mr-2">Or sign up with:</span>

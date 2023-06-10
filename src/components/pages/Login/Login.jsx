@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useTitle from "../../../hooks/useTitle";
+import { AtSymbolIcon } from '@heroicons/react/24/solid';
 
 const suMessage = <div className="alert alert-success shadow-lg">
     <div>
@@ -65,7 +66,7 @@ const Login = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
             <div className="max-w-md w-full px-6 py-8 bg-white shadow-md rounded-md">
-                <h2 className="text-2xl font-semibold mb-6">Login</h2>
+                <h2 className="md:text-4xl text-2xl font-semibold mb-6 text-center text-blue-600">Login</h2>
                 <p className="text-red-500">{error}</p>
                 <p>{success}</p>
                 <form onSubmit={handleSignIn}>
@@ -102,17 +103,18 @@ const Login = () => {
                         >
                             Sign In
                         </button>
-                        <Link
+                        <p>New Here! <Link
                             to='/signUp'
                             className="text-blue-500 hover:underline text-sm"
-                        >Sign Up</Link>
-                        <a
-                            className="text-blue-500 hover:underline text-sm"
+                        >Sign Up</Link></p>
+                       
+                    </div>
+                    <p className="mt-5"> Forgot Password? <a
+                            className="text-blue-500 font-medium hover:underline text-sm"
                             href="#"
                         >
-                            Forgot Password?
-                        </a>
-                    </div>
+                        Reset
+                        </a></p>
 
                     <div className="flex items-center justify-center mt-6">
                         <span className="text-gray-600 mr-2">Or sign in with:</span>
@@ -120,17 +122,8 @@ const Login = () => {
                             className="flex items-center bg-white border border-gray-300 rounded-md p-2 shadow-sm hover:shadow-md"
                             type="button"
                         >
-                            <svg className="h-5 w-5 mr-2 text-red-600" viewBox="0 0 24 24">
-                                <path
-                                    fill="currentColor"
-                                    d="M21.35 9.5H12v3.8h4.3c-.2 1-.8 2-1.7 2.6v2.2h2.8c1.6-1.5 2.5-3.6 2.5-6.1s-.9-4.5-2.6-6l-2.7 2.1C17.4 4.3 19 6.7 19 9.5h2.35z"
-                                ></path>
-                                <path
-                                    fill="currentColor"
-                                    d="M12 21c-1.8 0-3.3-.6-4.5-1.7L4 21l1.2-3.6C3.6 15.5 3 13.6 3 11.5s.6-4 2.2-5.4L4 2h6v2H6.6C4.9 4 3.5 6 3.5 8.2S4.9 12.5 6.6 13h5.8c1.7 0 3.1 1.9 3.1 4.1S14,16.9 14,19 16 17.3 16 15.5 16h-2.35z"
-                                ></path>
-                            </svg>
-                            <span onClick={handleGoogleSignIn} className="text-gray-600">Google</span>
+                            <AtSymbolIcon className="h-6 w-6 text-red-600"/>
+                            <span onClick={handleGoogleSignIn} className="text-gray-600"> Google</span>
                         </button>
                     </div>
                 </form>

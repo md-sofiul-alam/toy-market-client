@@ -11,7 +11,7 @@ const Category = ({ toy }) => {
     }
     return (
         <div className="card bg-base-100 shadow-xl overflow-hidden">
-            <figure className="p-4"><img src={imageUrl} alt="Shoes" /></figure>
+            <figure className="p-4 h-72"><img src={imageUrl} alt="Shoes" /></figure>
             <div className="card-body bg-blue-100">
                 <h2 className="card-title">Toy name: <span className='text-green-600 font-bold'>{toyName}</span></h2>
                 <div className="text-xl flex justify-between my-4">
