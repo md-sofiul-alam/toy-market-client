@@ -8,7 +8,7 @@ const Categories = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/gallery')
+        fetch('https://your-toy.vercel.app/gallery')
             .then(res => res.json())
             .then(data => setToys(data))
     }, [])

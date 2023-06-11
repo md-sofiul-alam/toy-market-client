@@ -10,8 +10,8 @@ const MyToys = () => {
     const [toys, setToys] = useState([]);
     useTitle("My Toys")
 
-    // const url = `http://localhost:5000/toys?email=${user?.email}`
-    const url = `http://localhost:5000/gallery?email=${user?.email}`
+    // const url = `https://your-toy.vercel.app/toys?email=${user?.email}`
+    const url = `https://your-toy.vercel.app/gallery?email=${user?.email}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -32,7 +32,7 @@ const MyToys = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/toys/${id}`, {
+                fetch(`https://your-toy.vercel.app/toys/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())
