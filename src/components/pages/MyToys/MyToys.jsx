@@ -16,7 +16,8 @@ const MyToys = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                setToys(data)
+                const myToys = data.filter(myToy => myToy?.sellerEmail === user?.email);
+                setToys(myToys)
             })
     }, [url]);
 
