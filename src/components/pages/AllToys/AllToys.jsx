@@ -7,7 +7,7 @@ const AllToys = () => {
     const [toys, setToys] = useState([])
     useTitle("All Toys")
 
-    const url = 'https://your-toy.vercel.app/toys'
+    const url = 'https://your-toy.vercel.app/gallery'
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

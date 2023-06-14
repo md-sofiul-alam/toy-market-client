@@ -32,7 +32,7 @@ const comments = [
 const Comments = () => {
     return (
         <div className="bg-emerald-200 py-20">
-            <h2 className="text-4xl font-bold mb-8 text-center text-primary">Client Comments</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center text-blue-600">Client Comments</h2>
             <Marquee>
             {comments.map(comment => <Comment
                     key={comment.id}
