@@ -19,7 +19,7 @@ const MyToys = () => {
                 const myToys = data.filter(myToy => myToy?.sellerEmail === user?.email);
                 setToys(myToys)
             })
-    }, [url]);
+    }, [url, user]);
 
     const handleDelete = id => {
         Swal.fire({

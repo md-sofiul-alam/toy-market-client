@@ -25,16 +25,6 @@ const AllToys = () => {
     return (
         <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-20 md:py-15'>
             <form onSubmit={handleSearch} className="flex items-center justify-center my-10">
-                <select
-                    className="border border-gray-300 rounded-l-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-64"
-                    type="text"
-                    name="text"
-                    placeholder="Search..."
-                >
-                    <option value="Regular">Regular</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Police">Police</option>
-                </select>
                 <button
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     type="submit"
