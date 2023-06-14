@@ -20,7 +20,7 @@ const UpdateToyData = () => {
         console.log(updatedToy)
 
         // Send data to the server
-        fetch(`https://your-toy.vercel.app/toys/${_id}`, {
+        fetch(`https://your-toy.vercel.app/gallery/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
